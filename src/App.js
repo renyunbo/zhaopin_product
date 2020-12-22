@@ -1,11 +1,20 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: sueRimn
+ * @Date: 2020-12-22 14:25:07
+ * @LastEditors: sueRimn
+ * @LastEditTime: 2020-12-22 14:36:37
+ */
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import DragDemo from './Drag/DragDemo';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +27,8 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
+      <DragDemo></DragDemo>
     </div>
   );
 }

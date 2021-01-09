@@ -1,0 +1,24 @@
+.insurance-success{
+  width: 500px;
+  height: 400px;
+  border: #999999 solid 1px;
+  margin: 0 auto;
+}
+.insurance-success  .qianming{
+    width: 100%;
+    text-align: center;
+    border: 1px solid #999999;
+    margin-bottom: 50px;
+   
+}
+.buttons {
+    width: 50%;
+    height: 30px;
+}
+
+.sigImage {
+    background-size: 200px 50px;
+    width: 200px;
+    height: 50px;
+    background-color: white;
+}

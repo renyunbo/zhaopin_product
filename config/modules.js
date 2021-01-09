@@ -1,9 +1,16 @@
+/*
+ * @Descripttion: 
+ * @version: 
+ * @Author: sueRimn
+ * @Date: 2020-12-22 14:25:07
+ * @LastEditors: sueRimn
+ * @LastEditTime: 2020-12-22 16:02:26
+ */
 'use strict';
 
 const fs = require('fs');
 const path = require('path');
 const paths = require('./paths');
-const chalk = require('react-dev-utils/chalk');
 
 /**
  * Get the baseUrl of a compilerOptions object.
@@ -39,10 +46,6 @@ function getAdditionalModulePaths(options = {}) {
 
   // Otherwise, throw an error.
   throw new Error(
-    chalk.red.bold(
-      "Your project's `baseUrl` can only be set to `src` or `node_modules`." +
-        ' Create React App does not support other values at this time.'
-    )
   );
 }
 

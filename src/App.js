@@ -4,31 +4,32 @@
  * @Author: sueRimn
  * @Date: 2020-12-22 14:25:07
  * @LastEditors: sueRimn
- * @LastEditTime: 2020-12-22 14:36:37
+ * @LastEditTime: 2021-01-09 11:13:16
  */
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import DragDemo from './Drag/DragDemo';
+import DragDemo from './container/Drag/DragDemo';
+import DragOrder from './container/DragOrder/DragOrder';
+import CrossArea from './container/CrossAreaDrag/CrossArea/CrossArea';
+import CanvasSignature from './container/CanvasSignature/CanvasSignature';
+import Signature from './container/Signature/Signature';
+
+
+
 
 function App() {
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      <DragDemo></DragDemo>
+     
+      {/* <DragDemo></DragDemo> */}
+      {/* <DragOrder></DragOrder> */}
+      {/* <CrossArea /> */}
+      {/* 拖拽排序 */}
+      {/* <CanvasSignature /> */}
+
+      {/* 企业签章 */}
+      {/* <Signature /> */}
     </div>
   );
 }

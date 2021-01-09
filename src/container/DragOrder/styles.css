@@ -1,0 +1,140 @@
+html,
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+li {
+  list-style: none;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.list-wrap {
+  position: relative;
+  width: 480px;
+}
+
+.list {
+  overflow-y: auto;
+  border: 1px solid #dddddd;
+  border-left: 0;
+  user-select: none;
+
+
+}
+
+.item {
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  padding: 8px 12px;
+  border-left: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  cursor: pointer;
+
+
+
+  
+}
+
+.index {
+  margin-right: 12px;
+  font-size: 16px;
+  color: #bbbbbb;
+}
+
+.info {
+  flex-grow: 1;
+  width: 0;
+  
+}
+
+.title {
+  font-size: 16px;
+  color: #000000;
+  line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.title .active {
+  background: #f8f8f8;
+  color: #23b8ff;
+ 
+}
+.index, .title {
+  color: #23b8ff;
+}
+
+.title:before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  height: 100%;
+  border-left: 3px solid #23b8ff;
+}
+
+
+
+
+.oper-list {
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  padding-left: 30px;
+  background-image: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.5) 0%,
+    #ffffff 23%
+  );
+
+
+}
+
+.oper-item {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  cursor: pointer;
+  position: relative;
+  
+}
+.oper-item:first-child:after {
+  content: "";
+  border-right: 1px solid #ddd;
+  height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 24px;
+  transform: translate(0, -50%);
+}
+
+.oper-item .icon-move {
+  cursor: move;
+}

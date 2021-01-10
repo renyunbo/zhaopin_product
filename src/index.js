@@ -4,7 +4,7 @@
  * @Author: sueRimn
  * @Date: 2020-12-22 14:25:07
  * @LastEditors: sueRimn
- * @LastEditTime: 2021-01-09 11:14:02
+ * @LastEditTime: 2021-01-10 09:54:22
  */
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -34,7 +34,7 @@ unsubscribe()
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
     <Provider store={store}>
-        {App}
+        {<App />}
     </Provider>,
     document.getElementById('root')
 );

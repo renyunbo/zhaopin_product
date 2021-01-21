@@ -4,7 +4,7 @@
  * @Author: sueRimn
  * @Date: 2021-01-05 16:23:42
  * @LastEditors: sueRimn
- * @LastEditTime: 2021-01-05 17:22:28
+ * @LastEditTime: 2021-01-10 11:40:32
  */
 import * as types from '../constant/ActionTypes';
 
@@ -33,5 +33,13 @@ export function deleteFromCart(product){
         payload:{
             product
         }
+    }
+}
+// 测试异步添加购物车
+export function asyncAddToCart(product,quantity,unitCost){
+    return (dispatch)=>{
+        setTimeout(() => {
+            dispatch(addToCart(1,2,3));
+        }, 1000);
     }
 }

@@ -4,7 +4,7 @@
  * @Author: sueRimn
  * @Date: 2020-12-22 14:25:07
  * @LastEditors: sueRimn
- * @LastEditTime: 2021-01-10 09:55:04
+ * @LastEditTime: 2021-01-10 11:14:57
  */
 import React from 'react';
 import logo from './logo.svg';
@@ -15,6 +15,7 @@ import CrossArea from './container/CrossAreaDrag/CrossArea/CrossArea';
 import CanvasSignature from './container/CanvasSignature/CanvasSignature';
 import Signature from './container/Signature/Signature';
 import ReduxDemo from './container/ReduxDemo/ReduxDemo';
+import AsyncRedux from './container/AsyncRedux/AsyncRedux';
 
 
 
@@ -32,7 +33,8 @@ function App() {
       {/* 企业签章 */}
       {/* <Signature /> */}
       {/* redux demo */}
-      <ReduxDemo></ReduxDemo>
+      {/* <ReduxDemo></ReduxDemo> */}
+      <AsyncRedux></AsyncRedux>
     </div>
   );
 }

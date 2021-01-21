@@ -4,7 +4,7 @@
  * @Author: sueRimn
  * @Date: 2021-01-09 17:39:13
  * @LastEditors: sueRimn
- * @LastEditTime: 2021-01-10 10:10:25
+ * @LastEditTime: 2021-01-10 11:28:23
  */
 import React from 'react';
 import { connect } from 'react-redux';
@@ -24,7 +24,7 @@ class ReduxDemo extends React.Component {
             <div>
                 <div>redux demo</div>
                 {
-                    cartReducer.cart.map((item,i)=>{
+                    cartReducer.cart && cartReducer.cart.map((item,i)=>{
                         return <div key={i}>
                             {item.product}-{item.quantity}-{item.unitCost}
                         </div>

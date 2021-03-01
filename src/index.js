@@ -4,16 +4,22 @@
  * @Author: sueRimn
  * @Date: 2020-12-22 14:25:07
  * @LastEditors: sueRimn
- * @LastEditTime: 2021-01-10 09:54:22
+ * @LastEditTime: 2021-01-28 10:36:29
  */
+
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import {Provider} from 'react-redux';
-// 进入redux
+// 引入redux
 import store from './redux/store';
+// 引入react-router
+// import {Router,Route  } from 'react-router';
+// import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+
+
 import {addToCart,updateCart,deleteFromCart} from './redux/actions/cartActions';
 
 console.log('initial state::::',store.getState());
@@ -34,6 +40,9 @@ unsubscribe()
 // ReactDOM.render(<App />, document.getElementById('root'));
 ReactDOM.render(
     <Provider store={store}>
+        {/* <Router history={hashHistory}>
+            <Route path='/' component={App} />
+        </Router> */}
         {<App />}
     </Provider>,
     document.getElementById('root')

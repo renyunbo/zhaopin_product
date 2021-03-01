@@ -4,7 +4,7 @@
  * @Author: sueRimn
  * @Date: 2020-12-22 14:25:07
  * @LastEditors: sueRimn
- * @LastEditTime: 2021-01-10 11:14:57
+ * @LastEditTime: 2021-02-09 07:41:46
  */
 import React from 'react';
 import logo from './logo.svg';
@@ -16,6 +16,7 @@ import CanvasSignature from './container/CanvasSignature/CanvasSignature';
 import Signature from './container/Signature/Signature';
 import ReduxDemo from './container/ReduxDemo/ReduxDemo';
 import AsyncRedux from './container/AsyncRedux/AsyncRedux';
+import ClickCount from './container/ReactHooks/ClickCount';
 
 
 
@@ -34,7 +35,8 @@ function App() {
       {/* <Signature /> */}
       {/* redux demo */}
       {/* <ReduxDemo></ReduxDemo> */}
-      <AsyncRedux></AsyncRedux>
+      {/* <AsyncRedux></AsyncRedux> */}
+      <ClickCount></ClickCount>
     </div>
   );
 }

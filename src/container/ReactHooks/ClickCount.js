@@ -1,17 +1,15 @@
 import React,{useState} from 'react';
-
 function ClickCount(){
     const [count,setCount] = useState(0);
-    const [name,setName] = useState('aa');
-
+    const [name,setName] = useState('张三');
+    
     function handleAdd(){
         setCount(count+1);
-        setName(name+'111');
+        setName(name+'2020');
     }
     return <div>
-        <p>点击了{count}次</p>
-<p>{name}</p>
-        <button onClick={handleAdd}>add</button>
+        {count} {name}
+        <button onClick={handleAdd}>添加</button>
     </div>
 }
 export default ClickCount;
